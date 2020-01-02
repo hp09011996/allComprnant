@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/Slider/RangeSlider.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/Slider/SimpleSlider.dart';
 import 'package:flutter_ui_compornent/src/model/category.dart';
 import 'package:flutter_ui_compornent/src/model/matrial_model.dart';
 import 'package:flutter_ui_compornent/src/utility/constant.dart';
@@ -11,7 +13,7 @@ class SliderViewList extends StatefulWidget {
 }
 
 class _SliderViewListState extends State<SliderViewList> {
-  final List<dynamic> list = [];
+  final List<dynamic> list = [SimpleSlider(), RangeSliders()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +39,10 @@ class _SliderViewListState extends State<SliderViewList> {
       child: Container(
         decoration: BoxDecoration(color: whiteColor),
         child: ListTile(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => list[index]));
+          },
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
           title: Text(

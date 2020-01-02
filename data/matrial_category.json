@@ -198,28 +198,88 @@
         },
         {
             "name": "Image",
-            "count": "0",
-            "item": []
+            "count": "3",
+            "item": [
+                {
+                    "name": "Assets Image",
+                    "type": "",
+                    "icon": ""
+                },
+                {
+                    "name": "Network Image",
+                    "type": "",
+                    "icon": ""
+                },
+                {
+                    "name": "Uint8List Image",
+                    "type": "",
+                    "icon": ""
+                }
+            ]
         },
         {
-            "name": "slider",
-            "count": "0",
-            "item": []
+            "name": "Slider",
+            "count": "2",
+            "item": [
+                {
+                    "name": "Simple Slider",
+                    "type": "",
+                    "icon": ""
+                },
+                {
+                    "name": "Range Slider",
+                    "type": "",
+                    "icon": ""
+                }
+            ]
         },
         {
-            "name": "switch",
-            "count": "0",
-            "item": []
+            "name": "Switch",
+            "count": "2",
+            "item": [
+                {
+                    "name": "Simple Switch",
+                    "type": "",
+                    "icon": ""
+                },
+                {
+                    "name": "Custom Switch",
+                    "type": "",
+                    "icon": ""
+                }
+            ]
         },
         {
             "name": "ButtomSheet",
-            "count": "0",
-            "item": []
+            "count": "1",
+            "item": [
+                {
+                    "name": "Show ButtomSheet",
+                    "type": "",
+                    "icon": ""
+                }
+            ]
         },
         {
             "name": "SnackBar",
-            "count": "0",
-            "item": []
+            "count": "1",
+            "item": [
+                {
+                    "name": "Simple SnackBar",
+                    "type": "",
+                    "icon": ""
+                },
+                {
+                    "name": "Button SnackBar",
+                    "type": "",
+                    "icon": ""
+                },
+                {
+                    "name": "Custom SnackBar",
+                    "type": "",
+                    "icon": ""
+                }
+            ]
         },
         {
             "name": "RadioButton",
@@ -281,7 +341,7 @@
         },
         {
             "name": "TextFields",
-            "count": "3",
+            "count": "4",
             "item": [
                 {
                     "name": "Simple TextField",

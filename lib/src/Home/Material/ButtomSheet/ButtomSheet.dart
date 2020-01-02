@@ -37,7 +37,9 @@ class _ButtomSheetListState extends State<ButtomSheetList> {
       child: Container(
         decoration: BoxDecoration(color: whiteColor),
         child: ListTile(
-          onTap: () {},
+          onTap: () {
+            settingModalBottomSheet(context);
+          },
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
           title: Text(
@@ -47,5 +49,29 @@ class _ButtomSheetListState extends State<ButtomSheetList> {
         ),
       ),
     );
+  }
+
+  dynamic settingModalBottomSheet(context) {
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext bc) {
+          return SafeArea(
+            child: Container(
+              child: Wrap(
+                children: <Widget>[
+                  ListTile(
+                      leading: Icon(Icons.music_note),
+                      title: const Text('Music'),
+                      onTap: () => {}),
+                  ListTile(
+                    leading: Icon(Icons.videocam),
+                    title: const Text('Video'),
+                    onTap: () => {},
+                  ),
+                ],
+              ),
+            ),
+          );
+        });
   }
 }

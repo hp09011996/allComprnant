@@ -9,9 +9,12 @@ import 'package:flutter_ui_compornent/src/Home/Material/GridView/GridViewList.da
 import 'package:flutter_ui_compornent/src/Home/Material/ImageList/ImageListView.dart';
 import 'package:flutter_ui_compornent/src/Home/Material/ListView/ListItemList.dart';
 import 'package:flutter_ui_compornent/src/Home/Material/RadioButton/RadioButton.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/Segment/Segment.dart';
 import 'package:flutter_ui_compornent/src/Home/Material/Slider/SliderListView.dart';
 import 'package:flutter_ui_compornent/src/Home/Material/SnackBar/SnackBar.dart';
 import 'package:flutter_ui_compornent/src/Home/Material/Switch/SwitchView.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TabBar/TabBarList.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TextField/TextFiledsList.dart';
 import 'package:flutter_ui_compornent/src/helper/json_read_helper.dart';
 import 'package:flutter_ui_compornent/src/model/matrial_model.dart';
 import 'package:flutter_ui_compornent/src/utility/constant.dart';
@@ -86,7 +89,10 @@ class _MaterialPageState extends State<MaterialPage> {
               SwitchViewList(category),
               ButtomSheetList(category),
               SnackBarViewList(category),
-              RadioButtonList(category)
+              RadioButtonList(category),
+              SegmentViewList(category),
+              TabbarViewList(category),
+              TextFieldList(category)
             ];
             Navigator.push(
               context,

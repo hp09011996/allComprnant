@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_compornent/src/Home/Material/Switch/CustomSwitch.dart';
-import 'package:flutter_ui_compornent/src/Home/Material/Switch/SimpleSwitch.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TextField/FillColorTextField.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TextField/FocusColorTextField.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TextField/IconTextField.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TextField/SimpleTextField.dart';
 import 'package:flutter_ui_compornent/src/model/category.dart';
 import 'package:flutter_ui_compornent/src/model/matrial_model.dart';
 import 'package:flutter_ui_compornent/src/utility/constant.dart';
 
-class SwitchViewList extends StatefulWidget {
-  const SwitchViewList(this.widgetM);
+class TextFieldList extends StatefulWidget {
+  const TextFieldList(this.widgetM);
   final WidgetModel widgetM;
   @override
-  _SwitchViewListState createState() => _SwitchViewListState();
+  _TextFieldListState createState() => _TextFieldListState();
 }
 
-class _SwitchViewListState extends State<SwitchViewList> {
-  final List<dynamic> list = [SimpleSwitch(), CustomSwitch()];
+class _TextFieldListState extends State<TextFieldList> {
+  final List<dynamic> list = [
+    SimpleTextFields(),
+    IconTextFields(),
+    FillColorTextFields(),
+    FocusColorTextFields()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

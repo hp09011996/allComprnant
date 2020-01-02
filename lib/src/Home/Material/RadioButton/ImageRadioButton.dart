@@ -227,7 +227,7 @@ class _ImageRadioButton extends State<ImageRadioButton> {
                 ),
                 Row(
                   children: <Widget>[
-                    Padding(
+                   const Padding(
                       padding: EdgeInsets.only(left: 10),
                     ),
                     Container(

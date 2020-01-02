@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_compornent/src/Home/Material/Switch/CustomSwitch.dart';
-import 'package:flutter_ui_compornent/src/Home/Material/Switch/SimpleSwitch.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TabBar/AnimatedTabBar.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TabBar/SimpleBottomBar.dart';
+import 'package:flutter_ui_compornent/src/Home/Material/TabBar/SimpleTabBar.dart';
 import 'package:flutter_ui_compornent/src/model/category.dart';
 import 'package:flutter_ui_compornent/src/model/matrial_model.dart';
 import 'package:flutter_ui_compornent/src/utility/constant.dart';
 
-class SwitchViewList extends StatefulWidget {
-  const SwitchViewList(this.widgetM);
+class TabbarViewList extends StatefulWidget {
+  const TabbarViewList(this.widgetM);
   final WidgetModel widgetM;
   @override
-  _SwitchViewListState createState() => _SwitchViewListState();
+  _TabbarViewListState createState() => _TabbarViewListState();
 }
 
-class _SwitchViewListState extends State<SwitchViewList> {
-  final List<dynamic> list = [SimpleSwitch(), CustomSwitch()];
+class _TabbarViewListState extends State<TabbarViewList> {
+  final List<dynamic> list = [SimpleTabBar(), FancyTabBar(), SimpleBottomBar()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
